@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhi-j8-uqo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MigraneHelp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-EF-w3g" customClass="PageControllerView" customModule="MigraneHelp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qR9-Z4-c4f">
+                                <rect key="frame" x="16" y="762" width="382" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vgp-tv-btS"/>
+                                </constraints>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-YF-u6G">
+                                <rect key="frame" x="16" y="812" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.043137254901960784" green="0.16470588235294117" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qKQ-1I-MR6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <action selector="getStartedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdg-wT-Xj2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qR9-Z4-c4f" firstAttribute="top" secondItem="iFt-EF-w3g" secondAttribute="bottom" constant="10" id="06G-1R-l0N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hAf-YF-u6G" secondAttribute="bottom" constant="10" id="3FM-PB-bLW"/>
+                            <constraint firstItem="qR9-Z4-c4f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="B0N-IR-vpY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qR9-Z4-c4f" secondAttribute="trailing" constant="16" id="ME2-Gg-Izg"/>
+                            <constraint firstItem="hAf-YF-u6G" firstAttribute="top" secondItem="qR9-Z4-c4f" secondAttribute="bottom" constant="10" id="OQV-LB-teP"/>
+                            <constraint firstItem="hAf-YF-u6G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Wqa-e3-3KR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAf-YF-u6G" secondAttribute="trailing" constant="16" id="ZYq-AM-jhC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFt-EF-w3g" secondAttribute="trailing" id="rX3-27-W2P"/>
+                            <constraint firstItem="iFt-EF-w3g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s7e-V9-sHF"/>
+                            <constraint firstItem="iFt-EF-w3g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uza-7a-0Aa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DxL-Gu-zYQ"/>
+                    <connections>
+                        <outlet property="getStartedButton" destination="hAf-YF-u6G" id="AqD-bg-EJB"/>
+                        <outlet property="pageControl" destination="qR9-Z4-c4f" id="Go5-Bk-c17"/>
+                        <outlet property="pageControllerView" destination="iFt-EF-w3g" id="C2t-N7-wAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uvd-aZ-o8j">
+            <objects>
+                <navigationController id="mhi-j8-uqo" sceneMemberID="viewController">
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="320-nw-wi4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jFT-bJ-C5r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzV-sd-hha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="200"/>
+        </scene>
+    </scenes>
+</document>

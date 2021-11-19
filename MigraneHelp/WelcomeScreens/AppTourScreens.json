@@ -1,0 +1,16 @@
+{
+  "AppTour": [
+    {
+      "headerText": "OB_ACTION_TIPS_BETTER_BRUSH",
+      "backgroundImage": "appTour1"
+    },
+    {
+      "headerText": "OB_SMART_SENSOR_DETECT",
+      "backgroundImage": "appTour2"
+    },
+    {
+      "headerText": "OB_PERSONAL_ASSISTANT",
+      "backgroundImage": "appTour3"
+    }
+  ]
+}

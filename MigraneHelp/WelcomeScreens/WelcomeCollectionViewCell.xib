@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WelcomeCollectionViewCell" id="ipD-Xz-bEF" customClass="WelcomeCollectionViewCell" customModule="Alleviate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="756"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="756"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-Ze-gg4">
+                        <rect key="frame" x="0.0" y="0.0" width="455" height="756"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iax-S2-Z9h">
+                                <rect key="frame" x="0.0" y="0.0" width="455" height="686"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your brushing habbits " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWi-6q-CsX" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="696" width="423" height="60"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ob_welcomepage_description_label"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hcs-u4-BzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iax-S2-Z9h" firstAttribute="leading" secondItem="eNO-Ze-gg4" secondAttribute="leading" id="0kO-nb-P55"/>
+                            <constraint firstItem="iax-S2-Z9h" firstAttribute="top" secondItem="eNO-Ze-gg4" secondAttribute="top" id="DGT-js-sys"/>
+                            <constraint firstAttribute="bottom" secondItem="MWi-6q-CsX" secondAttribute="bottom" id="JHn-9H-pvN"/>
+                            <constraint firstItem="MWi-6q-CsX" firstAttribute="top" secondItem="iax-S2-Z9h" secondAttribute="bottom" constant="10" id="fco-4n-9yh"/>
+                            <constraint firstItem="MWi-6q-CsX" firstAttribute="leading" secondItem="eNO-Ze-gg4" secondAttribute="leading" constant="16" id="gYX-He-HXh"/>
+                            <constraint firstAttribute="trailing" secondItem="MWi-6q-CsX" secondAttribute="trailing" constant="16" id="muT-00-YGK"/>
+                            <constraint firstAttribute="trailing" secondItem="iax-S2-Z9h" secondAttribute="trailing" id="rLz-15-hXX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eNO-Ze-gg4" secondAttribute="bottom" id="Rga-y3-WgY"/>
+                <constraint firstItem="eNO-Ze-gg4" firstAttribute="leading" secondItem="ipD-Xz-bEF" secondAttribute="leading" id="VTA-gR-yyp"/>
+                <constraint firstItem="eNO-Ze-gg4" firstAttribute="top" secondItem="ipD-Xz-bEF" secondAttribute="top" id="dWv-t6-B7M"/>
+                <constraint firstAttribute="trailing" secondItem="eNO-Ze-gg4" secondAttribute="trailing" id="iwa-Se-SEX"/>
+            </constraints>
+            <size key="customSize" width="455" height="940"/>
+            <connections>
+                <outlet property="backgroundImage" destination="iax-S2-Z9h" id="8GP-D5-GLH"/>
+                <outlet property="descriptionLabel" destination="MWi-6q-CsX" id="IEw-Jt-jX8"/>
+            </connections>
+            <point key="canvasLocation" x="244.20289855072465" y="458.70535714285711"/>
+        </collectionViewCell>
+    </objects>
+</document>
